@@ -183,8 +183,7 @@ async def main():
     app.add_handler(CallbackQueryHandler(callback_handler))
 
     print("🤖 Bot ishga tushdi...")
-    await app.run_polling()
+    app.run_polling()
 
 if __name__ == "__main__":
-    import asyncio
-    asyncio.get_event_loop().run_until_complete(main())
+    main()
